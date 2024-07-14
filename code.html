@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Bullet List</title>
+    <style>
+      ul.custom-bullets {
+        list-style-type: none; /* Remove default bullets */
+        padding-left: 0;
+      }
+
+      ul.custom-bullets li {
+        position: relative;
+        padding-left: 20px; /* Adjust according to the custom bullet size */
+      }
+
+      ul.custom-bullets li::before {
+        content: "•"; /* Custom bullet character */
+        position: absolute;
+        left: 0;
+        color: red; /* Change bullet color */
+        font-size: 20px; /* Adjust bullet size */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <ul class="custom-bullets">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul> -->
+    <script src="./code.js"></script>
+  </body>
+</html>
